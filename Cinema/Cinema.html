@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cinema</title>
+		<script type="text/javascript">
+		var numero = parseInt (prompt("Qual é a sua idade"));
+			if (numero <  18)
+							{
+					window.location.href = "kids.html"
+
+				}
+				</script>			
+			</script>
+		<link rel="stylesheet" type="text/css" href="todos.css">	
+
+	</head>
+	<div>
+	<body background="tabela.jpg">
+		<table border="0"  width="900"   align="center" bgcolor="white">
+
+		
+			<tr>
+				<td  height="89"><img src="logo.jpg" width="150"></td>
+				<td align="right"><h2>Gêneros:</h2></td>
+				<td>
+						<select id="link">
+  			 <option value="" selected>Escolha o Gênero</option>
+  			<option value="ação.html">Ação</option>
+   			<option value="aventura.html">Aventura</option>
+  			 <option value="kids.html">Kids</option>
+</select>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+<script>
+ $(document).ready(function(){
+
+    $('#link').on('change', function () {
+         var url = $(this).val(); 
+         if (url) { 
+             window.open(url, '_blank');
+          }
+          return false;
+        });
+     });
+</script>
+</td>
+
+					
+			</tr>
+
+					</div>
+			<tr>
+				<td><hr></td>
+			</tr
+	
+			<tr>
+					
+				<td align="left">
+					<h2>Em Cartaz:</h2>
+					
+				</td>
+		
+			</tr>
+			<div>
+			<tr align="center">
+				
+				<td colspan="3" align="center"><img src="cartaz.jpg" width="300" height=""></td>
+			</tr>
+		</div>
+
+			<div>
+			<tr>
+				<td>
+				<h2>Filmes:</h2>
+				</td>
+			</tr>
+			<tr>
+				<td><hr></td>
+			</tr>
+		</div>
+		<div>
+			<tr>
+				<div>
+				<td colspan="0"><img src="sonic.jpg" width="200"><h2>Sonic</h2></td>
+					</div>
+					<div>
+						<td colspan="1"><img src="scooby.jpg" width="200"><h2>Scooby-Doo</h2></td>
+							<div>
+						<td colspan="1"><img src="venom.jpg" width="200"><h2>Venom</h2></td>
+							</div>
+					</div>
+				
+			</tr>
+		</div>
+			<tr>
+				<td colspan="1"><img src="coringa.jpg" width="200"><h2>Coringa</h2></td>
+				<td colspan="1"><img src="dora.jpg" width="200"><h2>Dora</h2></td>
+				<td colspan="1"><img src=tranformers.jpg width="200"><h2>Tranformers</h2></td>
+			</tr>
+			
+
+		</table>
+
+
+	</body>
+</html>
